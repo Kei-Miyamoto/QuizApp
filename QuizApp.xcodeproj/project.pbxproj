@@ -11,6 +11,11 @@
 		05C4BF612883C00500D5DE98 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C4BF602883C00500D5DE98 /* ContentView.swift */; };
 		05C4BF632883C00700D5DE98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05C4BF622883C00700D5DE98 /* Assets.xcassets */; };
 		05C4BF662883C00700D5DE98 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05C4BF652883C00700D5DE98 /* Preview Assets.xcassets */; };
+		05C4BF6F2883CFFD00D5DE98 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 05C4BF6E2883CFFD00D5DE98 /* RealmSwift */; };
+		05C4BF722883D04B00D5DE98 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 05C4BF712883D04B00D5DE98 /* Realm */; };
+		05C4BF772883D0B100D5DE98 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C4BF762883D0B100D5DE98 /* Home.swift */; };
+		05C4BF792883D2B200D5DE98 /* AddPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C4BF782883D2B200D5DE98 /* AddPageView.swift */; };
+		05C4BF7B2883D2FE00D5DE98 /* DBViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C4BF7A2883D2FE00D5DE98 /* DBViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,10 @@
 		05C4BF602883C00500D5DE98 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		05C4BF622883C00700D5DE98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		05C4BF652883C00700D5DE98 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		05C4BF6C2883CF9700D5DE98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		05C4BF762883D0B100D5DE98 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		05C4BF782883D2B200D5DE98 /* AddPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPageView.swift; sourceTree = "<group>"; };
+		05C4BF7A2883D2FE00D5DE98 /* DBViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +35,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05C4BF722883D04B00D5DE98 /* Realm in Frameworks */,
+				05C4BF6F2883CFFD00D5DE98 /* RealmSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +48,7 @@
 			children = (
 				05C4BF5D2883C00500D5DE98 /* QuizApp */,
 				05C4BF5C2883C00500D5DE98 /* Products */,
+				05C4BF702883D04B00D5DE98 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,6 +63,10 @@
 		05C4BF5D2883C00500D5DE98 /* QuizApp */ = {
 			isa = PBXGroup;
 			children = (
+				05C4BF752883D07D00D5DE98 /* ViewModel */,
+				05C4BF742883D07700D5DE98 /* Model */,
+				05C4BF732883D06B00D5DE98 /* View */,
+				05C4BF6C2883CF9700D5DE98 /* Info.plist */,
 				05C4BF5E2883C00500D5DE98 /* QuizAppApp.swift */,
 				05C4BF602883C00500D5DE98 /* ContentView.swift */,
 				05C4BF622883C00700D5DE98 /* Assets.xcassets */,
@@ -65,6 +81,37 @@
 				05C4BF652883C00700D5DE98 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		05C4BF702883D04B00D5DE98 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		05C4BF732883D06B00D5DE98 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				05C4BF762883D0B100D5DE98 /* Home.swift */,
+				05C4BF782883D2B200D5DE98 /* AddPageView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		05C4BF742883D07700D5DE98 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		05C4BF752883D07D00D5DE98 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				05C4BF7A2883D2FE00D5DE98 /* DBViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +130,10 @@
 			dependencies = (
 			);
 			name = QuizApp;
+			packageProductDependencies = (
+				05C4BF6E2883CFFD00D5DE98 /* RealmSwift */,
+				05C4BF712883D04B00D5DE98 /* Realm */,
+			);
 			productName = QuizApp;
 			productReference = 05C4BF5B2883C00500D5DE98 /* QuizApp.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +162,9 @@
 				Base,
 			);
 			mainGroup = 05C4BF522883C00500D5DE98;
+			packageReferences = (
+				05C4BF6D2883CFFD00D5DE98 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = 05C4BF5C2883C00500D5DE98 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,6 +192,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				05C4BF612883C00500D5DE98 /* ContentView.swift in Sources */,
+				05C4BF7B2883D2FE00D5DE98 /* DBViewModel.swift in Sources */,
+				05C4BF792883D2B200D5DE98 /* AddPageView.swift in Sources */,
+				05C4BF772883D0B100D5DE98 /* Home.swift in Sources */,
 				05C4BF5F2883C00500D5DE98 /* QuizAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,6 +327,7 @@
 				DEVELOPMENT_TEAM = 93X6J3QJ6G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = QuizApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +357,7 @@
 				DEVELOPMENT_TEAM = 93X6J3QJ6G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = QuizApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -339,6 +398,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		05C4BF6D2883CFFD00D5DE98 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		05C4BF6E2883CFFD00D5DE98 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 05C4BF6D2883CFFD00D5DE98 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+		05C4BF712883D04B00D5DE98 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 05C4BF6D2883CFFD00D5DE98 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 05C4BF532883C00500D5DE98 /* Project object */;
 }
